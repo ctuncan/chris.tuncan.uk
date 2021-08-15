@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-08-17 Tue 16:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chris Tuncan</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="DESKTOP-3B77LBC" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style type="text/css">
+body {max-width:600px; margin:auto;}
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+.cventry {margin: 0; padding: 0; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Chris Tuncan</h1>
+
+<div id="outline-container-orga8e4eef" class="outline-2">
+<h2 id="orga8e4eef">Summary</h2>
+<div class="outline-text-2" id="text-orga8e4eef">
+<p>
+Senior software engineer with 6 years of industry experience.
+Delivered award winning features,
+reduced tedium,
+and increased developer efficency.
+Cross disciplinary with experience in Agile management,
+testing, DevOps,
+embedded, application, web, and server development.
+With a passion for making everyone&rsquo;s lives easier.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org862dc66" class="outline-2">
+<h2 id="org862dc66">Employment</h2>
+<div class="outline-text-2" id="text-org862dc66">
+</div>
+<div id="outline-container-org1c46f61" class="outline-3">
+<h3 id="org1c46f61">Senior Software Engineer</h3>
+
+<ul class="cventry">
+    <li class="fa fa-building"> Raymarine Ltd.</li>
+    <li class="fa fa-map-marker"> Fareham, UK</li>
+    <li class="fa fa-calendar"> Jan 2020 -- Present</li>
+</ul>
+<div class="outline-text-3" id="text-org1c46f61">
+<p>
+Oversee architectural design of numerous codebases,
+ensuring that multiple teams (40+ developers, 10 testers) are coordinated,
+despite covering multiple time zones,
+and identifying potentially problematic system interactions.
+</p>
+
+<p>
+Maintained healthy and performant git repositories,
+through training, manual monitoring, and automated systems
+(such as detecting when feature branches would conflict,
+rejecting incomplete submodule pushes,
+or foxtrot merges).
+</p>
+
+<p>
+Run a daily meeting with testers
+to cover bugs that might not be handled well by the scrum meeting,
+such as legacy bugs or regressions
+that don&rsquo;t appear to be linked to active development.
+</p>
+
+<p>
+Develop automation for repeatedly requested tasks.
+Such as taking a screenshot of every screen in every language,
+exporting assets and settings for UI to tweak,
+or generating a variety of documents for the release process.
+(Bash, PHP, SQL, Confluence)
+</p>
+
+<p>
+Work directly with OEMs and customers
+to solve their problems and give priority support.
+</p>
+
+<p>
+Maintain multiple customised Android platforms for our hardware,
+including Android 5, 7, 8, 11.
+(C++, C, Java)
+</p>
+
+<p>
+Encourage professional development of developers and interns through
+pair programing,
+sharing articles and talks,
+and guiding them to their problem&rsquo;s solutions.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-org388c4cf" class="outline-3">
+<h3 id="org388c4cf">Scrum Master</h3>
+
+<ul class="cventry">
+    <li class="fa fa-building"> Raymarine Ltd.</li>
+    <li class="fa fa-map-marker"> Fareham, UK</li>
+    <li class="fa fa-calendar"> Jan 2018 -- Oct 2020</li>
+</ul>
+<div class="outline-text-3" id="text-org388c4cf">
+<p>
+Utilised JIRA to manage sprint planning and run scrums.
+Then used the various metrics in JIRA to guide retrospectives.
+As a team we identified key metics that we wanted to track,
+and developed visualisations to make them clear and concise.
+</p>
+
+<p>
+Tracked reported crashes across mutliple test systems,
+adjusting the raw value to take into account the load of the system under test.
+A system that isn&rsquo;t crashing because it&rsquo;s turned off is not a useful metric!
+</p>
+
+<p>
+Tracked bugs raised and resolved over time
+to identify the accumulation of technical debt.
+Both within our team, and across the codebase as a whole.
+</p>
+
+<p>
+Developed ClearCruise AR,
+which won the IBEX 2018 Product Innovation Award,
+SAIL Magazine&rsquo;s 2019 Pittman Innovation Award,
+and 2019 NMEA Technology Award.
+</p>
+</div>
+
+</div>
+<div id="outline-container-orgfec4eb6" class="outline-3">
+<h3 id="orgfec4eb6">Software Engineer</h3>
+
+<ul class="cventry">
+    <li class="fa fa-building"> Raymarine Ltd.</li>
+    <li class="fa fa-map-marker"> Fareham, UK</li>
+    <li class="fa fa-calendar"> Jun 2017 -- Dec 2019</li>
+</ul>
+<div class="outline-text-3" id="text-orgfec4eb6">
+<p>
+Worked on a cross platform (Linux/Android) C++ and Qt application
+to develop new features as part of a agile scrum team.
+Fixed bugs across all areas of the codebase in an efficent and timely manner.
+Ensured seemless coordination with UI designers, system architects, and testers
+through active listening and communication skills.
+</p>
+
+<p>
+Created reproducible development environments for building code,
+which both reduced breakage in the continuous integration system,
+and reduced new starter setup from a multi-day affair to a single command.
+Since then we have not had to deal with &ldquo;but it compiles on my machine&rdquo;.
+(Although &ldquo;It works on my machine is harder to stamp out&rdquo;)
+</p>
+
+<p>
+Maintained a fleet of 5 build machines,
+using custom monitoring tools to handle common failiure cases
+such as
+running out of storage,
+filesystem failiure,
+rogue processes from non-sandboxed builds.
+</p>
+
+<p>
+Reduced our full product build from 5h to 1h20
+by distributing build variants across multiple build machines.
+</p>
+
+<p>
+Monitored test systems by connecting them into a single ethernet network,
+isolated from each other using VLANs,
+allowing a single ethernet cable to connect to all systems simultaneously
+by changing the VLAN outgoing packets were tagged with.
+This allowed viewing the load, crash logs, system settings, even the screen.
+While also allowing us to control the screen, remotely upgrade, and more.
+</p>
+</div>
+
+</div>
+<div id="outline-container-org8e0a096" class="outline-3">
+<h3 id="org8e0a096">Software Tester</h3>
+
+<ul class="cventry">
+    <li class="fa fa-building"> Raymarine Ltd.</li>
+    <li class="fa fa-map-marker"> Fareham, UK</li>
+    <li class="fa fa-calendar"> Jul 2015 -- May 2017</li>
+</ul>
+<div class="outline-text-3" id="text-org8e0a096">
+<p>
+Automated UI testing using the Squish framework by FrogLogic.
+These were able to replicate more tedious tests performed by real testers,
+they also could run against nightly software releases.
+I implemented a library of abstractions
+to allow tests to more closely match plain english test specifications.
+(Python)
+</p>
+
+<p>
+Extended Squish to hook into the application&rsquo;s performance metrics,
+this allowed to track relative performance rather than just functional pass/fail.
+This system was able to identify performance regressions,
+as well as verify optimisations.
+(C++, Python)
+</p>
+
+<p>
+Built a frontend and backend for aggregating performance results.
+(PHP, SQL, HTML and JS)
+</p>
+
+<p>
+Rewrote the integration between Squish and our CI/CD system.
+This reduced the size of test results on disk,
+made scheduling tests on test machines more flexible,
+allowed test machines to be version independent,
+centralised error reporting.
+(Bash, PHP, Python, SQL)
+</p>
+
+<p>
+Developed simulators for third-party hardware
+which was often not easily controlled or observed programatically.
+This reduced the amount of external state in our automated test systems,
+reducing false results.
+We were even able to implement a new NMEA2000 feature
+in parallel with the third-party hardware,
+with minimal changes need when the hardware was recieved.
+(Python, NMEA2000, TCP/UDP)
+</p>
+
+<p>
+At the end of my industrial placement I continued at Raymarine part-time
+as the technical expert.
+In this role I focused more on architectural design,
+pair programming and code reviews for the full time team.
+</p>
+</div>
+
+</div>
+</div>
+<div id="outline-container-org386bcba" class="outline-2">
+<h2 id="org386bcba">Education</h2>
+<div class="outline-text-2" id="text-org386bcba">
+</div>
+<div id="outline-container-orgdd1f156" class="outline-3">
+<h3 id="orgdd1f156">BEng Electrical and Electronic Engineering</h3>
+
+<ul class="cventry">
+    <li class="fa fa-building"> Southampton University</li>
+    <li class="fa fa-map-marker"> Hampshire, UK</li>
+    <li class="fa fa-calendar"> Oct 2013 -- Jun 2017</li>
+</ul>
+<div class="outline-text-3" id="text-orgdd1f156">
+<p>
+I recieved the IET Diamond Jubilee Scholarship,
+and graduated with first class honours.
+</p>
+
+<p>
+When I was attending Southampton University they did not offer industry placements.
+However the faculty was amenable when I approached them about organising my own.
+</p>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
