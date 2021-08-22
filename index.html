@@ -1,29 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-  <link rel="microsub" href="https://aperture.p3k.io/microsub/598">
-  <title>My New Website</title>
-</head>
-<body>
-  <h1>My New Website</h1>
-  <div class="h-card">
-    <p>
-      Hi, my name is <span class="p-name">Chris Tuncan</span> and I am a human on the Internet.
-    </p>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/598">
+    <title>Chris Tuncan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+          background: #222;
+      }
 
-    <p>
-      You can find me on other websites below:
-    </p>
+      #card {
+          width: 450px;
+          padding: 25px;
+          margin: auto;
+          background: #E9E2D0;
+          font-family: courier;
+      }
 
-    <ul>
-      <!-- replace _mygithubid_ with your GitHub username -->
-      <li><a class="u-url" href="https://github.com/ctuncan" rel="me">@ctuncan</a></li>
-    </ul>
-  </div>
-</body>
-</html>
+      #card img {
+          width: 150px;
+          float: left;
+          border-radius: 5px;
+          margin-right: 20px;
+      }
+
+      #card h2 {
+          color: #333;
+          margin: 0 auto;
+          font-size: 15pt;
+      }
+
+      #card p {
+          color: #555;
+          font-size: 13px;
+      }
+
+      .icon-box{
+          box-sizing: border-box;
+          color: black;
+          font-size: 24px;
+          height: 45px;
+          width: 45px;
+          padding: 5px;
+          display: inline-block;
+          border: 2px solid black;
+          margin: 5px;
+          text-align: center;
+          transition: all ease 0.5s;
+      }
+      .icon-box:hover {
+          box-shadow: inset 0 50px 0 0 black;
+          color: white;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="card" class="h-card">
+      <img src="face.gif"/>
+      <h2 class="p-name">Chris Tuncan</h2>
+      <p>Senior Software Engineer</p>
+      <p>C, C++, Python, Bash, PHP, Qt, QML</p>
+
+      <a class="u-url" href="https://github.com/ctuncan" rel="me"><i class="icon-box fa fa-github"></i></a>
+      <a class="u-url" href="https://linkedin.com/in/chris-tuncan" rel="me"><i class="icon-box fa fa-linkedin"></i></a>
+      <a href="cv.html"><i class="icon-box fa">CV</i></a>
+
+    </div>
+  </body>
